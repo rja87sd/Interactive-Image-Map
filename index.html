@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Map</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="heading">
+            Interactive Image Map with Clickable Areas
+        </h1>
+        <p aria-labelledby="heading">
+            This interactive map showcases various clickable areas.
+        </p>
+    </header>
+
+    <main>
+        <h2>Map Area</h2>
+        <!-- This is a random image from unsplash.com. The image map will be laid over this. -->
+        <img style="position: relative;" src="https://source.unsplash.com/random?computer" alt="Interactive Image Map" usemap="#myMap"
+            width="600" height="600">
+            <!-- This is the image map -->
+        <map name="myMap">
+            <!-- Clickable area 1 -->
+            <area shape="rect" coords="34,44,270,350" href="https://www.newegg.com" alt="To Newegg">
+            <!-- Clickable area 2 -->
+            <area shape="circle" coords="500,300,45" href="https://www.nvidia.com/en-us/" alt="To Nvidia">
+        </map>
+    </main>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
